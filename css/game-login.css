@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.login-game-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+  }
+  
+  .login__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .login__header img {
+    width: 250px;
+  }
+  
+  
+  .login__header h1 {
+    color:#fafafa;
+    font-size: 1.5em;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .login_game_input {
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .login_game_button {
+    background: #7FC6A4 ;
+    border: none;
+    outline: none;
+    color: #EDFFED;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s ease-in-out ;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 15px;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+    .login_game_button:hover {
+      background: #ffffff;
+      color: #003554;
+        transition: all 0.3s ease-in-out;
+    }
+  
+  .login_game_button:disabled {
+    background-color: #eee;
+    border: 2px solid #969595;
+    color: #aaa;
+    cursor: auto;
+    transition: ease-in-out 0.3s;
+  }
+
+  ::placeholder{
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .letra{
+    font-family: 'Press Start 2P', cursive;
+    color: #c4c4c4;
+  }

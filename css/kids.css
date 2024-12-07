@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.imagem-kids{
+    display: flex;
+    width: 100%;
+    background-image: url('../images/fundo-kids.jpg');
+    background-size:cover;
+    height: 20vh;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+.titulo-kids{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: max(5vw,30px);
+}
+
+
+.ecogames{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+
+    
+}
+
+span {
+    text-align: center;
+    font-size: max(1.4vw, 18px);
+}
+
+.imagem {
+    text-align: center;
+    font-size: max(1.2vw,20px);
+}
+
+
+
+a span{
+    text-decoration: none;
+    color: #003554;
+}
+
+#conteudo2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0% 7%;
+}
+
+#ecogames {
+    width: 50%;
+    margin: auto;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#conteudo2 a {
+    text-decoration: none;
+    color: #0d4e75;
+    transition: ease-in-out 0.2s;
+}
+
+#conteudo2 a :hover{
+    color: #ffffff;
+    transition: ease-in-out 0.2s;
+}
+
+@media screen and (min-width:1180px) {
+
+    #ecogames {
+        width: 25%;
+        margin: auto;
+        border-radius: 5%;
+        box-sizing: border-box;
+    }
+
+span{
+ text-align: center;
+ font-size: max(1.2vw,10px);
+ 
+}
+
+#conteudo2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0%;
+}
+
+}
+
+@media screen and (min-width:601px) {
+
+.imagem-kids{
+    height: 30vh;
+
+    
+    }
+
+}
+
+@media screen and (min-width:901px) {
+    .imagem-kids{
+        height: 40vh;
+        }
+
+}
+
+
+@media screen and (min-width:1000px) {
+
+    .imagem-kids{
+        height: 50vh;
+        }
+
+}

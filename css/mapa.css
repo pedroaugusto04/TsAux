@@ -1,0 +1,94 @@
+#map { height: 55vh; }
+
+main{
+    display: flex;
+    align-content: center;
+    flex-flow: column;
+}
+
+.imagem-descarte{
+    display: flex;
+    width: 100%;
+    background-image: url('../images/descarte-fundo.png');
+    background-size:cover;
+    height: 20vh;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+.titulo-descarte{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: max(5vw,30px);
+}
+
+.mapa-c{
+    margin: 3vw 4vw ;
+    display: flex;
+    align-content: center;
+    flex-flow: column;
+}
+
+#ecoponto-texto{
+    width: max(2vw,32px);
+}
+
+#conteudo{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 5%;
+    background-color: rgb(37, 37, 37);
+
+}
+
+@media screen and (min-width:601px) {
+    #map { height: 60vh; }
+    
+    
+.mapa-c{
+    margin: 3vw 5vw ;
+
+}
+
+.imagem-descarte{
+    height: 30vh;
+
+    
+    }
+
+}
+
+@media screen and (min-width:901px) {
+    #map { height: 80vh; }
+    
+    .mapa-c{
+    margin: 3vw 10vw ;
+
+    
+
+}
+
+.imagem-descarte{
+    height: 40vh;
+
+    
+    }
+
+}
+
+
+
+@media screen and (min-width:1000px) {
+
+    .imagem-descarte{
+        height: 50vh; 
+        }
+
+}
+
+
+
+

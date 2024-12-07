@@ -1,0 +1,76 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+.formulario-c {
+    margin: auto;
+}
+
+
+
+.imagem-contato{
+    display: flex;
+    width: 100%;
+    background-image: url('../images/contato.jpg');
+    background-size:cover;
+    height: 20vh;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+.titulo-contato{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: max(5vw,30px);
+}
+
+
+a {
+    margin: auto;
+}
+
+.instagram {
+
+    width: max(30vw, 100px);
+}
+
+span {
+    text-align: center;
+}
+
+@media screen and (min-width:601px) {
+   
+
+    .imagem-contato{
+        height: 30vh;
+    
+        
+        }
+    
+    }
+    
+    @media screen and (min-width:901px) {
+    
+    .imagem-contato{
+        height: 40vh;
+        }
+    
+    }
+    
+    
+    
+    @media screen and (min-width:1000px) {
+    
+        .imagem-contato{
+            height: 50vh; 
+            }
+    
+    }

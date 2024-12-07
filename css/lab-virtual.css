@@ -1,0 +1,192 @@
+body{
+    
+    background-size: cover;
+    width: 100%;
+}
+
+.seletor-personagem{
+    width: 100%;
+}
+
+.seletor-personagem .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card.selecionado {
+    transform: scale(1.1);
+    border: 2px solid #007BFF; /* Borda azul para destacar o card selecionado */
+}
+
+.aproximar{
+    transition: transform 0.3s ease-in-out;
+}
+
+.aproximar:hover{
+    cursor: pointer;
+    transform: scale(1.1) ;
+
+}
+
+.card{
+    background-color: rgba(44, 44, 44, 0.72);
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-animado {
+    min-width: 300px;
+    min-height: 60px;
+    display: inline-flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #5cd14f;
+    background: linear-gradient(90deg, rgb(129, 230, 131) 0%, rgb(79, 209, 81) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79, 209, 85, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.botao-animado::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00ff44;
+    box-shadow: 0 0 60px rgba(0, 255, 89, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.botao-animado:hover,
+.botao-animado:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.botao-animado:hover::before,
+.botao-animado:focus::before {
+    opacity: 1;
+}
+
+.botao-animado::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.botao-animado:hover::after,
+.botao-animado:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+.invisible {
+    display: none;
+}
+
+.epi {
+    width: 200px; /* Largura padrão dos EPIs */
+    height: 200px; /* Altura padrão dos EPIs */
+    margin: 10px; /* Espaçamento ao redor dos EPIs */
+    transition: transform 0.3s ease-in-out; /* Transição suave para transformações */
+    cursor: grab; /* Cursor de "pegar" para indicar que é arrastável */
+}
+
+.epi:active {
+    cursor: grabbing; /* Cursor de "agarrando" quando o EPI está sendo arrastado */
+    transform: scale(1.1); /* Aumenta o tamanho do EPI quando está sendo arrastado */
+}
+
+.epi img {
+    width: 100%; /* Garante que a imagem do EPI ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.d-epi{
+    width: fit-content;
+    height: fit-content;
+}
+
+.personagem {
+    width: 20%; /* Largura padrão dos personagens */
+    margin: 10px; /* Espaçamento ao redor dos personagens */
+
+}
+
+.epi.dragging {
+    opacity: 0.8;
+    z-index: 1000; /* Garante que o EPI arrastado fique na frente dos outros elementos */
+}
+
+.ferramenta {
+    width: 200px; /* Largura padrão das ferramentas */
+    height: 200px; /* Altura padrão das ferramentas */
+    margin: 10px; /* Espaçamento ao redor das ferramentas */
+    transition: transform 0.3s ease-in-out; /* Transição suave para transformações */
+    cursor: grab; /* Cursor de "pegar" para indicar que é arrastável */
+}
+
+.ferramenta:active {
+    cursor: grabbing; /* Cursor de "agarrando" quando a ferramenta está sendo arrastada */
+    transform: scale(1.1); /* Aumenta o tamanho da ferramenta quando está sendo arrastada */
+}
+
+.ferramenta img {
+    width: 100%; /* Garante que a imagem da ferramenta ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.d-ferramenta {
+    width: fit-content;
+    height: fit-content;
+}
+
+.ferramenta.dragging {
+    opacity: 0.8;
+    z-index: 1000; /* Garante que a ferramenta arrastada fique na frente dos outros elementos */
+}
