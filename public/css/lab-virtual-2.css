@@ -1,0 +1,97 @@
+#div-produtos {
+  display: flex;
+  flex-direction: row;
+}
+
+#div-ferramentas {
+  display: flex;
+  flex-direction: row;
+}
+
+#agua-oxigenada-img,
+#balao-volumetrico-img,
+#video-acido-agua-balao-volumetrico,
+#acido-sulfurico-img,
+#bequer-img,
+#placas-img,
+#pipeta-img,
+#video-pipeta-acido,
+#video-bequer-acido-placa-agua,
+#video-cobre-solubilizado,
+#video-bequer-acido,
+#agua-destilada-img,
+#video-bequer-acido-placa-h2o2,
+#video-acido-sulfurico-balao-volumetrico,
+#video-agua-balao-volumetrico,
+#agitador-magnetico-img {
+  height: 17rem;
+  width: 17rem;
+  object-fit: contain;
+}
+
+#video-bequer-acido-placas {
+  width: 15rem;
+  height: 15rem;
+}
+
+#div-agua-oxigenada,
+#div-balao-volumetrico,
+#div-acido-sulfurico,
+#div-bequer,
+#div-placas,
+#div-pipeta,
+#div-agua-destilada,
+#div-agitador-magnetico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  width: 18rem;
+  height: 18rem;
+  border: 2px solid #fff;
+  cursor: grab;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#div-acido-sulfurico:hover,
+#div-balao-volumetrico:hover,
+#div-bequer:hover,
+#div-agua-oxigenada:hover,
+#div-placas:hover,
+#div-pipeta:hover,
+#div-agua-destilada:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
+}
+
+.animated-green {
+  animation: piscando-verde 2.5s infinite;
+}
+
+.animated-red {
+  animation: piscando-vermelho 1s 3;
+}
+
+@keyframes piscando-verde {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: green;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes piscando-vermelho {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: transparent;
+  }
+}

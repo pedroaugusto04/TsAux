@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/lab-virtual-2.css" />
+    <link rel="icon" href="../images/logo(2).svg" type="image/svg" />
+    <title>EcoDesc</title>
+  </head>
+  <body>
+    <div id="div-produtos">
+      <div id="div-agua-oxigenada" draggable="true">
+        <img
+          id="agua-oxigenada-img"
+          src="../images/lab-virtual/lab-virtual/ferramentas/agua_oxigenada/agua_oxigenada.png"
+          alt="Água Oxigenada"
+        />
+      </div>
+      <div id="div-acido-sulfurico" draggable="true">
+        <img
+          id="acido-sulfurico-img"
+          src="../images/lab-virtual/lab-virtual/ferramentas/acido_sulfurico/acido_sulfurico.png"
+          alt="Ácido Sulfúrico"
+        />
+      </div>
+
+      <div id="div-agua-destilada" draggable="true">
+        <img
+          id="agua-destilada-img"
+          src="../images/lab-virtual/lab-virtual/ferramentas/agua_destilada/agua_destilada.png"
+          alt="Água Destilada"
+        />
+      </div>
+
+      <div id="div-placas" draggable="true">
+        <img
+          id="placas-img"
+          src="../images/lab-virtual/lab-virtual/placas/placa_cortada_horizontalmente.png"
+          alt="Placas"
+        />
+      </div>
+    </div>
+
+    <div id="div-ferramentas" draggable="true">
+      <div id="div-balao-volumetrico">
+        <img
+          id="balao-volumetrico-img"
+          src="../images/lab-virtual/lab-virtual/ferramentas/balao_volumetrico/balao.png"
+          alt="Balão Volumétrico"
+        />
+      </div>
+      <div id="div-bequer" draggable="true">
+        <img
+          id="bequer-img"
+          src="../images/lab-virtual/lab-virtual/ferramentas/bequer/bequer.png"
+          alt="Béquer"
+        />
+      </div>
+      <div id="div-pipeta" draggable="true">
+        <img
+          id="pipeta-img"
+          src="../images/lab-virtual/lab-virtual/ferramentas/pipeta/pipeta.png"
+          alt="Pipeta"
+        />
+      </div>
+
+      <div id="div-agitador-magnetico" draggable="true">
+        <img
+          id="agitador-magnetico-img"
+          src="../images/lab-virtual/lab-virtual/ferramentas/agitador_magnetico/agitador_magnetico.png"
+          alt="Agitador Magnético"
+        />
+      </div>
+    </div>
+    <div id="div-video">
+      <video
+        id="video-acido-agua-balao-volumetrico"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/balao acido sulfurico + agua.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <video
+        id="video-bequer-acido"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/bequer acido sulfurico.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <video
+        id="video-bequer-acido-placas"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/bequer acido + placa.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <video
+        id="video-pipeta-acido"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/pipeta acido sulfurico.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <video
+        id="video-bequer-acido-placa-agua"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/bequer acido + placa + h2o2.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <video
+        id="video-cobre-solubilizado"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/cobre solubilizado.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <video
+        id="video-bequer-acido-h2o2-placa"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/bequer acido + placa + h2o2.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <video
+        id="video-acido-balao-volumetrico"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/balao acido sulfurico.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <video
+        id="video-agua-balao-volumetrico"
+        width="100%"
+        height="auto"
+        style="display: none"
+      >
+        <source
+          src="../images/lab-virtual/lab-virtual/processo_quimico/animacoes/adicionarAgua.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <script src="../js/lab-virtual-2.js"></script>
+  </body>
+</html>

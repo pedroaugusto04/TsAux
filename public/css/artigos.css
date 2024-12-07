@@ -1,0 +1,56 @@
+.title,
+.form-button,
+.form-pesquisa {
+  padding: 1rem;
+}
+
+
+.imagem-artigos{
+  display: flex;
+  width: 100%;
+  background-image: url('../images/avalie-fundo.jpg');
+  background-size:cover;
+  height: 20vh;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.titulo-artigos{
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  font-size: max(5vw,30px);
+}
+
+@media screen and (min-width:601px) {
+
+  .imagem-artigos{
+    height: 30vh;
+
+
+  }
+
+  img {
+    width: 20vw;
+    height: 100%;
+    padding: 5px;
+  }
+
+}
+
+@media screen and (min-width:901px) {
+  .imagem-artigos{
+    height: 40vh;
+  }
+
+}
+
+
+@media screen and (min-width:1000px) {
+
+  .imagem-artigos{
+    height: 50vh;
+  }
+
+}

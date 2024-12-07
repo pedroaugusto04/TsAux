@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="pt-br" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/lab-virtual.css">
+    <link rel="icon" href="../images/logo(2).svg" type="image/svg">
+    <title>EcoDesc</title>
+</head>
+<body>
+
+<section draggable="false" class="seletor-personagem mb-2 " id="seletor-personagem">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-sm">
+              <h1>Escolha seu personagem</h1>
+            </div>
+          </div>
+
+          <div class="row gap-5 mb-5">
+            <div
+              class="card me-5 col-sm aproximar personagem"
+              id="personagemF"
+              onclick="selecaoPersonagem('F')"
+            >
+              <img
+                class="card-img"
+                src="../images/personagemF.png"
+                alt="Card image cap"
+              />
+            </div>
+
+            <div
+              class="card col-sm aproximar personagem"
+              id="personagemM"
+              onclick="selecaoPersonagem('M')"
+            >
+              <img
+                class="card-img"
+                src="../images/personagemM.png"
+                alt="Card image cap"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-4 mb-5 invisible" id="btn-start">
+            <div class="col-sm">
+              <button
+                type="button"
+                class="wrap botao-animado aproximar"
+                onclick="salvarSelecao()"
+              >
+                Continuar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ddArea invisible" id="fase-epi">
+        <div class="column card d-epi">
+          <div class="item" draggable="true">
+            <img
+              src="../images/lab-virtual/lab-virtual/epi/oculos.png"
+              class="epi"
+              id="oculos"
+            />
+          </div>
+          <div class="item" draggable="true">
+            <img
+              src="../images/lab-virtual/lab-virtual/epi/jaleco.png"
+              class="epi"
+              id="jaleco"
+            />
+          </div>
+
+          <div class="item" draggable="true">
+            <img
+              src="../images/lab-virtual/lab-virtual/epi/luva.png"
+              class="epi"
+              id="luva"
+            />
+          </div>
+        </div>
+
+        <div draggable="false" class="column">
+          <img src="#" class="personagem" id="personagem" />
+        </div>
+      </section>
+
+      <section class="d-ferramenta" id="fase1">
+        <div class="column card d-fase1">
+          <div class="item" draggable="true">
+            <img
+              src="../images/lab-virtual/lab-virtual/ferramentas/soprador_termico/soprador%20termico.png"
+              class="ferramenta"
+              id="soprador-termico"
+            />
+          </div>
+          <div class="item" draggable="true">
+            <img
+              src="../images/lab-virtual/lab-virtual/ferramentas/alicate/alicate.png"
+              class="ferramenta"
+              id="alicate"
+            />
+          </div>
+        </div>
+        <div class="column card d-fase1" style="text-align: center">
+          <div class="item" draggable="false">
+            <img
+              src="../images/lab-virtual/lab-virtual/placas/placa_inteira.png"
+              class="ferramenta"
+              id="placa-mae"
+            />
+          </div>
+        </div>
+        <div class="column card d-fase1" style="position: absolute; right: 0">
+          <div class="item" draggable="true">
+            <img
+              src="../images/lab-virtual/lab-virtual/ferramentas/tesoura_mecanica/tesoura.png"
+              class="ferramenta"
+              id="tesoura-mecanica"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="" id="fase2"></section>
+
+      <script src="../js/lab-virtual.js"></script>
+      <script src="../js/dragDrop.js"></script>
+    </body>
+  </html>
+</html>

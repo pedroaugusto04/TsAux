@@ -1,0 +1,113 @@
+*{
+   margin:0;
+   padding: 0%;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+
+header{
+   margin:0;
+}
+
+
+h2{
+   font-size: max(2.5vw,30px);
+   padding: 0% 3%;
+}
+
+h3{
+   font-size: max(2vw,25px);
+   padding: 0% 3%;
+}
+
+.conteudo2{
+   margin:0;
+   display: flex;
+   width: 100%;
+   box-sizing: border-box;
+   align-items: center;
+   padding: 6%;
+   border: none;
+   text-align: justify;
+   flex-wrap: nowrap;
+
+} 
+
+.fundo-conteudo{
+
+   background: #deeede;
+
+}
+
+.conteudo-aux{
+   margin:0;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   box-sizing: border-box;
+   align-items: center;
+   padding-top: 6%;
+}
+
+.conteudo-aux p{
+   font-size: max(1.4vw,18px);
+}
+
+
+.imagem-pagina{
+   width: 100%;
+
+}
+
+.conteudo3{
+   margin:0;
+   display: flex;
+   width: 100%;
+   box-sizing: border-box;
+   align-items: center;
+   flex-direction: row;
+   padding: 6%;
+   flex-wrap: nowrap;
+}
+
+
+h1{
+   margin: 0% 2%;
+}
+
+
+p {
+   font-size: max(1.4vw,18px);
+   margin: 0% 2%;
+}
+
+.imagem{
+   width: 100%;
+   padding: 0%;
+}
+
+
+@media screen and (max-width:700px) {
+   .conteudo2{
+      flex-direction: column;
+      padding: 4%;
+      flex-wrap: wrap;
+   }
+   
+   .conteudo3{
+      flex-direction: column;
+      padding: 4%;
+      flex-wrap: wrap; 
+   }
+
+   .imagem{
+      padding: 4%;
+      width: 60%;
+   }
+
+}

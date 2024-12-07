@@ -1,0 +1,43 @@
+{
+  "name": "api-ts",
+  "version": "1.0.0",
+  "description": "olá este é o projeto Ecodesc!!!",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Render server"
+    },
+    {
+      "url": "http://localhost:3000",
+      "description": "Local server"
+    }
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "dotenv-safe": "^9.1.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "firebase": "^10.12.4",
+    "jsonwebtoken": "^9.0.2",
+    "leaflet": "^1.9.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.1",
+    "postgres": "^3.4.3",
+    "sequelize": "^6.33.0",
+    "serpapi": "^2.1.0",
+    "sqlite": "^5.0.1",
+    "sqlite3": "^5.1.6"
+  },
+  "type": "module"
+}
